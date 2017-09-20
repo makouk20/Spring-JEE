@@ -1,0 +1,28 @@
+spring:
+   
+    application:
+        name: SpringBoot2
+    devtools:
+        restart:
+            enabled: true
+        livereload:
+            enabled: true
+    datasource:
+        url: jdbc:mysql://localhost:3306/test2
+        driverClassName: com.mysql.jdbc.Driver
+        username: root
+        password: 
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLDialect
+        open-in-view: false
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+            naming:
+                implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        
+        
+server:
+    port: 9900
+    
